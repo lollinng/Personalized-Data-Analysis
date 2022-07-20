@@ -1,0 +1,82 @@
+{% extends 'base.html' %} {% include 'header.html' %} {% block body %}
+<div class="layout_padding">
+	<section class="layout_padding story_section">
+		<form method="POST" action="{{url_for('TE')}}">
+			<div class="mb-3">
+				<label for="exampleInputEmail1" class="form-label">Enter a roll number of student.</label>
+				<input type="number" class="form-control" name="roll" />
+			</div>
+			<button type="submit" class="btn btn-primary">Submit</button>
+		</form>
+	</section>
+</div>
+<div class="layout_padding">
+	<section class="layout_padding story_section">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-6">
+					<div>
+						<img class="img-fluid" src="../static/images/TE_subs.png" alt="" />
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="story_detail">
+						<h3>Data visualization</h3>
+						<h2>Average Attendance Subject Wise</h2>
+						<h5>
+							Here we can see the average attendance of the class for every Subject. As we can see the least is for CN whereas the highest is for
+							TOC.
+						</h5>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</div>
+<div class="layout_padding">
+	<section class="layout_padding story_section">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-6">
+					<div>
+						<img class="img-fluid" src="../static/images/TE_pracs.png" alt="" />
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="story_detail">
+						<h3>Data visualization</h3>
+						<h2>Practical Attendance Subject Wise</h2>
+						<h5>
+							Here we can see the average attendance of the practical for every Subject. As we can see the least is for DBMSL whereas the highest
+							is for CNL.
+						</h5>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</div>
+<div class="layout_padding">
+	<section class="layout_padding story_section">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-6">
+					<div>
+						<img class="img-fluid" src="../static/images/TE_total.png" alt="" />
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="story_detail">
+						<h3>Data visualization</h3>
+						<h2>Practical vs Theory Average Attendance</h2>
+						<h5>
+							This is the average attendance for Practical and theory classes. As we can see the attendance for Practical classes are
+							significantly higher than that of Theory Sessions.
+						</h5>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</div>
+{% endblock %}

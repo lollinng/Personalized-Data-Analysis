@@ -1,0 +1,23 @@
+{% include 'base.html' %} {% include 'header.html' %} {% block body %}
+<!-- prettier-ignore -->
+<br><br>
+<div class="container">
+	<div class="container">
+		<table>
+			<tr>
+                <th>Roll No. Of Student </th>
+				<th>Name Of Student </th>
+				<th>Attendance</th>
+			</tr>
+			{% for i in range(length)%}
+			<tr>
+				<td>{{ans[0][i]}}</td>
+				<td>{{ans[1][i]}}</td>
+                <td>{{ans[2][i]}}</td>
+			</tr>
+			{% endfor %}    
+		<table>
+	</div>
+</div>
+
+{% endblock %}
